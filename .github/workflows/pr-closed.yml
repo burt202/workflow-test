@@ -1,8 +1,11 @@
-name: pr
+name: pr-closed
 
 on:
   pull_request:
-    types: [closed]
+    types:
+      - closed
+    branches:
+      - main
 
 jobs:
   ci:
